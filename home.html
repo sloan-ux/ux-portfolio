@@ -6,36 +6,40 @@
   <title>Home - Portfolio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href=href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="home" id="home">
+<body class="home">
   <header>
-    <div>
-      <img src="logo.svg" alt="Will Sloan logo" style="width:200px;height:100px;">
+    <div class="container">
+      <img src="logo.svg" alt="Will Sloan logo" class="logo">
       <nav>
         <ul>
-          <li><a href="home.html" target="_self" href="#" class="button">Home</a></li>
-          <li><a href="about.html" target="_self" href="#" class="button">About</a></li>
-          <li><a href="#contact" target="_self" href="#" class="button">Contact</a></li>
-          <li><a href="files/Resume.pdf" target="_blank" href="#" class="button">Resume</a></li>
+          <li><a href="home.html" target="_self">Home</a></li>
+          <li><a href="about.html" target="_self">About</a></li>
+          <li><a href="#contact" target="_self">Contact</a></li>
+          <li><a href="files/Resume.pdf" target="_blank">Resume</a></li>
         </ul>
       </nav>
     </div>
     </header>
 
     <main>
-      <div class="hero-section" id="hero-section">
-        <div>
+      <div>
+        <div class="container">
           <h1><span>Hi, my name is Will Sloan.</span><br>I'm a UX Designer in Washington, DC.<br>It's nice to meet you.</h1>
           <p>I'm a User Experience Designer in Washington, DC. I bring unique insight into the design process with my background in psychology. My objective is to guide users to their goals with as little friction as possible.</p>
         </div>
       </div>
 
-      <div id="project-preview">
+      <div class="container">
+        <h2>My Work</h2>
+      </div>
+
+      <div class="container">
         <div>
-          <h2>Project: 'Mudlark'</h2>
+          <h3>Mudlark</h3>
         </div>
         <div>
           <a href="mudlark.html"
@@ -46,16 +50,15 @@
             </a>
           </div>
           <div>
-            <h3>Mudlark</h3>
             <p>A digital scavenger hunt experience</p>
             <a href="mudlark.html" href="#" class="button">Read more</a>
           </div>
         </div>
       </div>
 
-      <div id="project-preview">
+      <div class="container">
         <div>
-          <h2>Project: 'Lit to Lens'</h2>
+          <h3>Lit to Lens</h3>
         </div>
         <div>
           <picture>
@@ -64,7 +67,6 @@
           </picture>
         </div>
         <div>
-          <h3>Lit to Lens</h3>
           <p>A podcast about books and their film adaptations</p>
           <a href="#" class="button">Read more</a>
         </div>
@@ -72,19 +74,20 @@
     </main>
 
     <footer>
-      <div id="contact">
+      <div id="contact" class="container">
         <h2>Get in Touch</h2>
         <p>If you want to ask me any questions about the project or give me any notes or suggestions or whatever, please don't hesitate to reach out. Feel free to call me at <a href="tel:+15712347514">(571) 234-7514</a>, send me a <a href="skype:willsloan.ux@gmail.com">Skype</a> message, or shoot me an email.</p>
         <div></div>
         <a href="mailto:willsloan.ux@gmail.com" class="button contact">Email Me</a>
       </div>
       <div>
-        <ul>
+        <h2>Follow my Socials</h2>
+        <div id="socials">
           <!--Social Media Layout and Placeholders-->
-          <li>
+          <div class="icon-width">
             <a href="https://www.linkedin.com/in/wksloan/" target="_blank">
             <!-- LinkedIn Icon -->
-              <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.0" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                   <rect fill="#007BB5" height="23" width="7" y="9"/>
                   <path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z" fill="#007BB5"/>
@@ -98,20 +101,20 @@
                 <g/>
               </svg>
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="icon-width">
             <a href="TWITTER-URL" target="_blank">
             <!-- Twitter Icon -->
-            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <rect height="400" style="fill:none;" width="400" x="56" y="56"/>
+            <svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 64 64" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect height="64" style="fill:none;" width="64" x="56" y="56"/>
               <path d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104" style="fill:#1da1f2;fill-rule:nonzero;"/>
             </svg>
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="icon-width">
             <a href="https://www.behance.net/wksloan" target="_blank">
             <!-- Behānce Icon -->
-              <svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg enable-background="new 0 0 64 64" height="64px" id="Layer_1" version="1.0" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g>
                   <path d="M12.914,15.272c0,0,3.027-0.23,3.027-3.852c0-3.619-2.053-5.403-5.191-5.403L0,6v20h11c0,0,5.5,0.174,5.5-6   C16.5,20,16.904,15.272,12.914,15.272z M4,9h5.5c0,0,1.882,0.031,1.882,2.471C11.382,14,9.5,14,9.5,14H4V9z M10,23H4v-6h6   c0,0,3,0.031,3,3S10.432,23,10,23z" fill="#111111"/>
                   <path d="M25,11c-7.513,0-7.5,7.5-7.5,7.5S17,26,25,26c0,0,7,0,7-6h-4c0,0,0,3-3,3c0,0-3,0-3-4c0,0,8,0,10,0   C32,17,32,11,25,11z M22,17c0,0-0.066-3,3-3c3.065,0,3,3,3,3H22z" fill="#111111"/>
@@ -125,11 +128,11 @@
                 <g/>
               </svg>
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="icon-width">
             <a href="DRIBBBLE-URL" target="_blank">
             <!-- Dribble Icon -->
-              <svg height="512px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <svg height="64px" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" width="64px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="_x38_9-dribbble">
                   <g>
                     <g>
@@ -141,8 +144,8 @@
                 <g id="Layer_1"/>
               </svg>
             </a>
-          </li>
-          <li>
+          </div>
+          <div class="icon-width">
             <a href="INSTAGRAM-URL" target="_blank">
             <!-- Instagram Icon -->
               <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -166,10 +169,12 @@
                 </g>
               </svg>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-      <p>Copyright Will Sloan 2020</p>
+      <div id="copyright">
+        <p class="center-text">Copyright Will Sloan 2020</p>
+      </div>
     </footer>
 
 </body>
