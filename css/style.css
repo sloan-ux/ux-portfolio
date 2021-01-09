@@ -58,6 +58,20 @@ a:active {
   color: #75D4C0;
 }
 
+nav > ul > li > a:visited {
+  color: #113B44;
+}
+
+nav > ul > li > a:active {
+  color: #75D4C0;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus /*keyboard-only users*/ {
+  color: #277C7F;
+  text-decoration: underline; /*underlining when hovering over link*/
+}
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
@@ -96,8 +110,17 @@ a:active {
 }
 
 #hero-section {
-  margin: 5px 5px 5px 5px;
-  padding: 5px;
+  background-color: #FFFEF2/*#10EFF6*/;
+  /*margin: 5px 5px 5px 5px;
+  padding: 5px;*/
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#p {
+  background-color: #FFFEF2/*#9EF5F8*/;
+  padding: 0 15px;
 }
 
 .project-preview {
@@ -106,13 +129,15 @@ a:active {
 }
 
 #contact {
+  background: #FFFEF2;
   margin: 5px 5px 5px 5px;
   padding: 5px;
 }
 
 .home {
-  margin: 5px 5px 5px 5px;
-  padding: 5px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  background-color: #FFFEF2/*#F0F0F0*/;
 }
 
 #socials {
@@ -122,6 +147,10 @@ a:active {
   padding: 5px;
   transition: 0.2s opacity;
   width: 100%;
+}
+
+#follow {
+  background-color: #FFFEF2;
 }
 
 .icon-width {
@@ -145,7 +174,8 @@ a:active {
 }
 
 header {
-  background-color: #56E13E;
+  /*background-color: #56E13E;*/
+  background-color: #FFFEF2;
   padding: 5px 5px 5px 5px; /* 10px - TOP; 5px - RIGHT; 15px - BOTTOM; 5px - LEFT -- CLOCKWISE*/
   /*
   Could also do...
@@ -155,11 +185,16 @@ header {
   padding-left: 5px;
   */
   margin: 5px;
-  border-bottom: 3px solid #D0483A;
+  /*border-bottom: 3px solid #D0483A;*/
+  text-align: center;
+  padding: 10px 0;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
 }
 
 footer {
-  background-color: #56E13E;
+  background-color: #FFFEF2/*#56E13E*/;
   padding: 5px 5px 5px 5px;
   margin: 5px;
 }
@@ -192,11 +227,66 @@ selector {
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  border-bottom: 1px solid #000000;
+  padding: 0px 0px 25px 0px;
 }
 
 .logo {
   width: 200px;
   height: 100px;
+  max-width: 250px;
+  background-color: #FFFEF2/*#87FFC7*/;
+}
+
+#ul {
+  background-color: #FFFEF2/*#87FFC7*/;
+}
+
+#work {
+  background-color: #FFFEF2/*#F610EF*/;
+}
+
+#mudlark {
+  background-color: #FFFEF2;
+}
+
+#littolens {
+  background-color: #FFFEF2;
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+main {
+  padding-top: 186px;
+}
+
+.center {
+  text-align: center;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 10px;
+  text-transform: lowercase;
+  font-weight: 200;
+  color: #4a4a4a;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
 }
 
 /*
