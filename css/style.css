@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body  {
   background-color: #FFFEF2;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6;
-  color: #4a4a4a
+  color: #4a4a4a;
 }
 
 h1, h2, h3, h4 {
@@ -18,7 +22,7 @@ h1 {
 
 h2 {
   font-size: 2.25em;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 h3 {
@@ -40,7 +44,8 @@ a {
   text-decoration: none; /*no underlining*/
 }
 
-a:hover {
+a:hover,
+a:focus /*keyboard-only users*/ {
   color: #277C7F;
   text-decoration: underline; /*underlining when hovering over link*/
 }
@@ -51,6 +56,147 @@ a:visited {
 
 a:active {
   color: #75D4C0;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active {
+  color: #75D4C0;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  background-color: #ff7f50;
+  color: #75D4C0;
+}
+
+#hero-section {
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+}
+
+.project-preview {
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+}
+
+#contact {
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+}
+
+.home {
+  margin: 5px 5px 5px 5px;
+  padding: 5px;
+}
+
+#socials {
+  display: inline-block;
+  background-color: #FFFEF2;
+  color: #FFFFFF;
+  padding: 5px;
+  transition: 0.2s opacity;
+  width: 100%;
+}
+
+.icon-width {
+  display: inline-block;
+  background-color: #FFFEF2;
+  color: #FFFFFF;
+  margin: 5px 5px 5px 5px;
+  width: 50px;
+}
+
+#copyright {
+  display: inline-block;
+  background-color: #FFFEF2;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.center-text {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #56E13E;
+  padding: 5px 5px 5px 5px; /* 10px - TOP; 5px - RIGHT; 15px - BOTTOM; 5px - LEFT -- CLOCKWISE*/
+  /*
+  Could also do...
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  */
+  margin: 5px;
+  border-bottom: 3px solid #D0483A;
+}
+
+footer {
+  background-color: #56E13E;
+  padding: 5px 5px 5px 5px;
+  margin: 5px;
+}
+
+selector {
+  margin: 0 auto;
+}
+
+selector {
+  position: relative;
+}
+
+selector {
+  float: right;
+}
+
+selector {
+  width: 1200px;
+}
+
+selector {
+  width: 80%;
+}
+
+/*Layout Styling*/
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
 }
 
 /*
